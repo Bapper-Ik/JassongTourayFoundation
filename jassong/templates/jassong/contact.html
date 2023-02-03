@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<style>
+    .custom-img {
+        background-image: url('{% static 'images/backgroud.jpg' %}')
+    }
+
+
+
+
+
+</style>
+
+<header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+    <div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl font-mono">
+        Sheikh Jassong Touray Foundation
+    </div>
+</header>
+
+<div class="">
+    <div class="md:flex bg-gray-200 w-3/4 mx-auto p-6 rounded-xl">
+        <div class="w-full md:flex-col md:w-1/2">
+            <h1 class="text-center pt-12 text-gray-900 text-3xl uppercase font-mono">contact-us</h1>
+            <div class="my-12 ">
+                <p class="text-gray-900 pb-2">Address: <span class="font-mono">No.8 Kairaba Avenue, Serrekunda,The Gambia</span>
+                </p>
+                <p class="text-gray-900 pb-2">Phone: <span class="px-4 font-mono">+9173332, 7593739, 7471086</span></p>
+                <p class="text-gray-900 pb-2">Gmail Address: <span
+                        class="px-4 font-mono">pjtfoundation2019@gmail.com</span></p>
+                <a href="https://web.facebook.com/profile.php?id=100071171781750"><p class="text-gray-900 pt-6">
+                    Facebook: <span
+                        class="px-4 font-mono">https://web.facebook.com/profile.php?id=100071171781750</span>
+                </p></a>
+            </div>
+
+        </div>
+        <div class="w-full md:flex-col md:w-1/2">
+            <img alt="jasson" src="{% static 'images/jasson.jpg'%}">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

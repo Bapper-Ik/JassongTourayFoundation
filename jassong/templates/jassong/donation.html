@@ -1,0 +1,662 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<style>
+    .custom-img {
+     background-image: url("{% static 'images/backgroud.jpg' %}");
+    }
+</style>
+
+
+<header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"">
+<div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl font-mono">
+    Sheikh Jassong Touray Foundation
+</div>
+</header>
+
+<div class="">
+    <!--    educaton-->
+    <div class="container mx-auto md:flex rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 md:flex-col w-full md:w-1/2 bg-gray-100 shadow-xl rounded p-6">
+            <img alt="education" src="{% static 'images/education.jpg' %}">
+            <a href="https://www.gofundme.com/f/1qz7d0er5c?ssid=1377196478&pos=76">
+                <button class="bg-blue-700 ml-24 my-6 px-6 rounded-lg text-gray-100 capitalize">donate now</button>
+            </a>
+
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ml-2 w-full md:flex-col rounded md:w-1/2">
+            <h2 class="text-xl font-mono p-2">Education Project</h2>
+            <p class="p-4 text-justify text-sm">The great man has Educated 780 students from Nursery to Degree levels
+                without charging any fees from them.
+                These students were staying with Him. He fed and clothes them. We now want to establish a School where
+                student can learn both English and Arabic from Primary, Upper and Senior Secondary School Levels. It is
+                also
+                his wish to establish a Boarding School in Minna his second Village where both Boys and Girls can be
+                sent
+                for Quranic Memorization. It's our wish to build these facilities in the area and we need your support.
+            </p>
+        </aside>
+
+    </div>
+    <!--end education-->
+
+    <!--    book project-->
+    <div class="container mx-auto md:flex rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 md:flex-col w-full md:w-1/2 bg-gray-100 shadow-xl rounded p-6">
+            <img alt="education" src="{% static 'images/book.jpg' %}">
+            <a href="https://www.gofundme.com/f/1qz7d0er5c?ssid=1377196478&pos=76">
+                <button class="bg-blue-700 ml-24 my-6 px-6 rounded-lg text-gray-100 capitalize">Donate Now</button>
+            </a>
+
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ml-2 md:flex-col rounded w-full md:w-1/2">
+            <h2 class="text-xl font-mono p-2">Book Project</h2>
+            <p class="p-4 text-justify text-sm">
+                In our efforts to keep and maintain our Grand Fathers legacy we are embarking on fund Raising acvies to
+                write a Book about our Great man Sheikh Pa Jassong Touray. The Research Team will travel to Guinea
+                Bissau, Senegal and Mauritania to collect information from His friends, Scholars, Students and people
+                who had contacts with him including those who were treated from illness at Buiba. We need photos of the
+                12 Mosques he built and do some research on His herbal Treatments.
+            </p>
+            <div>
+                <h3 class="font-bold text-center">Book Project Cost</h3>
+                <div class="overflow-x-auto relative">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                scope="row">
+                                Travel
+                            </th>
+                            <td class="py-4 px-6">
+                                Research
+                            </td>
+                            <td class="py-4 px-6">
+                                Publishing
+                            </td>
+                            <td class="py-4 px-6">
+                                Grand Total
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                scope="row">
+                                D50,000.00
+                            </th>
+                            <td class="py-4 px-6">
+                                D250,000.00
+                            </td>
+                            <td class="py-4 px-6">
+                                D250,000.00
+                            </td>
+                            <td class="py-4 px-6">
+                                D550,000.00
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!--    end book project-->
+
+    <!--    health projects-->
+    <div class="container mx-auto md:flex rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 md:flex-col w-full md:w-1/2 bg-gray-100 shadow-xl rounded p-6">
+            <img alt="education" src="{% static 'images/health.jpg' %}">
+            <a href="https://www.gofundme.com/f/1qz7d0er5c?ssid=1377196478&pos=76">
+                <button class="bg-blue-700 ml-24 my-6 px-6 rounded-lg text-gray-100 capitalize">donate now</button>
+            </a>
+
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ml-2 md:flex-col rounded w-full md:w-1/2">
+            <h2 class="text-xl font-mono p-2">Health Project</h2>
+            <p class="p-4 text-justify text-sm">
+                The late Sheikh Pa Jassong was a Doctor. He treats many of His patients who were completely mad or
+                insane and become normal and Healthy. He uses different Trees from the bush put them in a big Jar. Wrote
+                verses from The Holy Quran on slates wash them and put them in Big containers and ask the sick and
+                normal people to drink and wash from it. Many sick people who took these medicines get cured and it also
+                helps and protects them. This method is sll practiced by His family. We definitely need funds to make
+                more Research into this secret and help the family to continue helping the society
+            </p>
+        </aside>
+    </div>
+
+    <!--    gathering-->
+    <div class="bg-gray-200 p-6 shadow-lg rounded">
+        <img alt="img" src="{% static 'images/cow.jpg'%}">
+        <h1 class="text-3xl font-bold">Annual Religious Gathering (Ziyareh)</h1>
+        <p class="leading-loose text-justify">
+            The great man organized an Annual Islamic gathering commonly known as Gammo or Ziyareh. This event attracts
+            almost 20 thousand visitors from all the parts in the country including Senegal, Mali and Guinea Bissau.
+            During this conference The Holy Quran is recited many times before and on the day. Renowned scholars from
+            the above places are invited to speak on various topics such as Quran, Sunnah of The Prophet, Understanding
+            Islam and The Spread of its Teachings and Maintaining World Peace. Morning Prayers and the sacrifice of the
+            CAMEL mark the end of the gathering. The meat of the Camel is distributed to all. A lot of prayers are done
+            during this conference all of which are answered by Allah Subuhanahu watallah.
+        </p>
+
+
+        <div class="overflow-x-auto relative">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th class="py-3 px-6" scope="col">
+                        S/N
+                    </th>
+                    <th class="py-3 px-6" scope="col">
+                        Description
+                    </th>
+                    <th class="py-3 px-6" scope="col">
+                        Quantity
+                    </th>
+                    <th class="py-3 px-6" scope="col">
+                        Cost
+                    </th>
+                    <th class="py-3 px-6" scope="col">
+                        Total Amount
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="bg-white dark:bg-gray-800 dark:border-gray-700">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        1
+                    </th>
+                    <td class="py-4 px-6">
+                        Camel
+                    </td>
+                    <td class="py-4 px-6">
+                        3
+                    </td>
+                    <td class="py-4 px-6">
+                        D80,000.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D240,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800 dark:border-gray-700">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        2
+                    </th>
+                    <td class="py-4 px-6">
+                        Bulls
+                    </td>
+                    <td class="py-4 px-6">
+                        10
+                    </td>
+                    <td class="py-4 px-6">
+                        D30,000.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D300,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        3
+                    </th>
+                    <td class="py-4 px-6">
+                        Cooking oil
+                    </td>
+                    <td class="py-4 px-6">
+                        30(10L)
+                    </td>
+                    <td class="py-4 px-6">
+                        D900.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D27,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        4
+                    </th>
+                    <td class="py-4 px-6">
+                        Rice
+                    </td>
+                    <td class="py-4 px-6">
+                        50Bags
+                    </td>
+                    <td class="py-4 px-6">
+                        D1150.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D57,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        5
+                    </th>
+                    <td class="py-4 px-6">
+                        Onion
+                    </td>
+                    <td class="py-4 px-6">
+                        30Bags
+                    </td>
+                    <td class="py-4 px-6">
+                        D700.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D21,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        6
+                    </th>
+                    <td class="py-4 px-6">
+                        Sugar
+                    </td>
+                    <td class="py-4 px-6">
+                        10Bags
+                    </td>
+                    <td class="py-4 px-6">
+                        D1400.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D14,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        7
+                    </th>
+                    <td class="py-4 px-6">
+                        Flour
+                    </td>
+                    <td class="py-4 px-6">
+                        10Bags
+                    </td>
+                    <td class="py-4 px-6">
+                        D1400.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D14,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        8
+                    </th>
+                    <td class="py-4 px-6">
+                        Potato
+                    </td>
+                    <td class="py-4 px-6">
+                        10Bags
+                    </td>
+                    <td class="py-4 px-6">
+                        D 600.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D 6,000.00
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        9
+                    </th>
+                    <td class="py-4 px-6">
+                        Camping Tent
+                    </td>
+                    <td class="py-4 px-6">
+                        3dys rent
+                    </td>
+                    <td class="py-4 px-6">
+                        D17,000.00
+                    </td>
+                    <td class="py-4 px-6">
+                        D51,000.00
+                    </td>
+                </tr>
+
+                <tr class="bg-white dark:bg-gray-800">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+
+                    </th>
+                    <td class="py-4 px-6">
+                        <a href="https://www.gofundme.com/f/1qz7d0er5c?ssid=1377196478&pos=76">
+                            <button class="bg-blue-600 mx-2 px-12 md:px-24 py-2 rounded-lg text-white">Donate Now</button>
+                        </a>
+                    </td>
+                    <td class="py-4 px-6 font-bold">
+                        Grand Total
+                    </td>
+                    <td class="py-4 px-6">
+
+                    </td>
+                    <td class="py-4 px-6 font-bold">
+                        D730,500.00
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="container mx-auto md:flex rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 md:flex-col w-full md:w-1/2 bg-gray-100 shadow-xl rounded p-6">
+            <img alt="education" src="{% static 'images/inf.jpg' %}">
+            <a href="{% url 'jassong:mosque' %}">
+                <button class="bg-blue-700 mx-auto my-6 px-24 rounded-lg text-gray-100 uppercase">View photos of mosques
+                    here
+                </button>
+            </a>
+
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ml-2 md:flex-col rounded w-full md:w-1/2">
+            <h2 class="text-xl font-mono p-2">Infrastructural Development Project</h2>
+            <p class="p-4 text-justify text-sm leading-loose">
+                The great Scholar built 12 Mosques throughout the Gambia and Guinea Bissau. Some of these Mosques needs
+                proper repair to maintain their structures. We need to buy cements, Timber, Paints, Nails, and Praying
+                Mats, Loud speakers, Solar Lamps, Clocks Holy Quran and Islamic books.
+            </p>
+
+            <p class="p-4 text-justify text-sm leading-loose">
+                The House of the Great man needs repairs. The Roof needs changing. The walls needs plastering and the
+                floor of the compound should be concrete. We need to dig 20 pit latrines. Local Toilets so that during
+                the annual conference Gammo people can have more Toilets facilities readily available. We need to have
+                Tap in mosques or it s areas so that water can be available for worshippers who want to perform
+                ablution.
+            </p>
+
+            <p class="p-4 text-justify text-sm leading-loose">
+                The above headlines are our major constrains so far. We are appealing to donor partners, Private
+                Individuals and Charities to come to our Aid to help us in any of the above areas they may be
+                interested.
+            </p>
+        </aside>
+    </div>
+
+
+    <div class="container mx-auto md:flex rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 md:flex-col w-full md:w-1/2 bg-gray-100 shadow-xl rounded p-6">
+            <img alt="education" src="{% static 'images/compound.jpeg' %}">
+            <h2 class="text-xl font-mono p-2">MUDERR DERR - The Sheikh's Compound In Buiba</h2>
+            <p class="p-4 text-justify text-sm leading-loose">
+                The name of Jassong’s compound in Buiba is called Suu-ba Kunoo (big Compound) located on the north of
+                the main Basse highway. This is where his entire family stay throughout his life time and even now.
+                However, he has another compound on the opposite side of the road just behind the central Mosque. This
+                compound is referred to as Muderr-derr which was a personal/private compound for Sheikh Jassong. He
+                alone lives in that compound and even after his death; the present Caliph Sheikh Sadibou resides there
+                alone.
+            </p>
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ml-2 md:flex-col rounded w-full md:w-1/2">
+
+            <p class="p-4 text-justify text-sm leading-loose">
+                Muderr Derr was designed from the word ALLAHU. Only Pa Jassong and his successors stay there. When he
+                was building this House he invited all Imams from Jarra to come with their people to help him in the
+                building. On the day of making the mud block, each Imam and his people were assigned to make their own
+                mud block which were used for the foundation. Jassong has never put on shoes and has never allowed it in
+                his compound. However, all his successors wear shoes but none of them allow it inside this compound. All
+                shores are gathered at the entrance.
+            </p>
+            <h2 class="text-xl font-mono p-2">SHEIKH RUKAWE</h2>
+            <p class="p-4 text-justify text-sm leading-loose">
+                At the entrance of Muderr-derr, there is a sitting Bantaba called ‘Sheikh Rukawe”. This was also build
+                by Sheikh Jassong but for a reason more than a mere sitting place. According to him, the construction of
+                Sheikh Rukawe was an ordered from the Almighty. The place is blessed by God and whoever sits there to
+                pray, will have his/her prayer answered. This is why Jassong forbidden any one sitting there with bad or
+                evil intention. When they were building Sheikh Rukawe, Jassong said the day of completion will reconcile
+                with the visiting of either a son or a grandson of a Saint. This happened to be the grandson of Serign
+                Touba.
+            </p>
+        </aside>
+    </div>
+
+    <div class="container mx-auto md:flex rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 md:flex-col w-full md:w-1/2 bg-gray-100 shadow-xl rounded p-6">
+            <img alt="education" src="{% static 'images/lake.jpg' %}">
+            <h2 class="text-xl font-mono p-2">Buiba Dallo, ARdul MAWAA - The Great Lake</h2>
+            <p class="p-4 text-justify text-sm leading-loose">
+                This Great Lake is discovered by Sheikh Pa Jassong Touray, Every day people visit this lake to pray and
+                take birth with its water. Farmers in the surrounding villages also take their cattle to drink at the
+                place. Every annual gathering thousand gathered here to pray and take birth with water. We want to make
+                a 2km road from the village to the site and plant some trees and erect seats around the place.
+            </p>
+
+            <p class="p-4 text-justify text-sm leading-loose">
+                One of the reasons for his stay in Buiba is because of the lake called ‘ArdUl Mawaa’. He was informed
+                about ‘Ardul Mawaa’ in his dream. It is 2 kilo metres on the south of Buiba. Jassong was looking for
+                this lake for many years. When he has the permission from God, he gave out Sadaka (charity) of 7 types
+                of food and made so many prayers before declaring the place as a secrete place. After the prayers and
+                eating at the lake, he stood and asked one of his scholars to light a candle and place it on top of a
+                cut-tree inside the lake. Despite the candle was place on top of the tree with windy atmosphere, the
+                lighting candle was milted until it was finished. The Talibes scholars visited it in the evening to see
+                the outcome and they found it was completed. They came back to informed him and he then praised God and
+                he commend; ‘whoever visits that lake after the completion of the candle their prayers will be answered
+                by God’.
+            </p>
+
+            <p class="p-4 text-justify text-sm leading-loose">
+                According to him, every 15th day of the month before Ramadan the Holy prophet (S. A. W.) and his Caliphs
+                comes to ‘Ardul Mawaa’ Sins that are forgiven by God during the year are burn that day. During Jassong’s
+                life time and even now, whoever embraced Islam is taken there for a formal visit. According to Jassong,
+                any new Muslim who took bath at ‘Ardul Mawaa’ will not sorely return to paganism. The water is still use
+                for bath with the hope of curing diseases and madness respectively.
+            </p>
+            <h2 class="text-xl font-mono p-2">Alhagie Faysa</h2>
+            <p class="p-4 text-justify text-sm leading-loose">
+                Alhagie Faysa was a Saint and a Jinn who came from Morocco to joined Sheikh Jassong in developing Islam.
+                He came with his daughter, Isatou Faysa. On his arrival, he requested to stay in Buiba but Jassong could
+                not accept that because human being and Jinn’s cannot stay together. He gave him permission to stay at
+                Ardul Mawaa (The Great Lake) and they can jointly work together for Islam. The daughter Isatou went to
+                settle in Minna (the new village of Sheikh Jassong) while her Father was living at the Lake.
+            </p>
+
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ml-2 md:flex-col rounded w-full md:w-1/2">
+            <div>
+                <h2 class="text-xl text-center uppercase font-bold">The Cost Will Include</h2>
+                <div class="overflow-x-auto relative">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                scope="row">
+                                Caterpillar clearing
+                            </th>
+                            <td class="py-4 px-6">
+                                Laying of gravel
+                            </td>
+                            <td class="py-4 px-6">
+                                planting of Trees
+                            </td>
+                            <td class="py-4 px-6 font-bold">
+                                Grand Total
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                scope="row">
+                                D 150,000.00
+                            </th>
+                            <td class="py-4 px-6">
+                                D 200,000.00
+                            </td>
+                            <td class="py-4 px-6">
+                                D 12,500.00
+                            </td>
+                            <td class="py-4 px-6">
+                                D 362,500.00
+                            </td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <a href="https://www.gofundme.com/f/1qz7d0er5c?ssid=1377196478&pos=76">
+                        <button class="bg-blue-700 ml-24 my-6 px-6 rounded-lg text-gray-100 uppercase">Donate Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <p class="p-4 text-justify text-sm leading-loose">
+                The above are the amounts needed to carry out this project. May Allah help us to raise this Amounts and
+                carry out the works we intend to do in each project. We ask Almighty Allah to reward any donor for any
+                butut that may be donated. Ameen Many Thanks.
+            </p>
+        </aside>
+    </div>
+
+    <div class="container mx-auto md:flex rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 md:flex-col w-full md:w-1/2 bg-gray-100 shadow-xl rounded p-6">
+            <img alt="education" src="{% static 'images/toilet.jpg' %}">
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ml-2 md:flex-col rounded w-full md:w-1/2">
+            <h2 class="text-xl font-mono p-2">Buiba Toilet Project</h2>
+            <p class="p-4 text-justify text-sm">
+                Due to the high number of visitors in Buiba for the Annual Gammo Ziyaree
+                we decided to raise funds to Erect Fifteen 15 of these toilets in the village.
+            </p>
+            <div class="overflow-x-auto relative">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                            scope="row">
+                            S/N
+                        </th>
+                        <th class="py-4 px-6">
+                            Description
+                        </th>
+                        <td class="py-4 px-6">
+                            Quantity
+                        </td>
+                        <td class="py-4 px-6 font-bold">
+                            Cost
+                        </td>
+                        <td class="py-4 px-6 font-bold">
+                            Total
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                            scope="row">
+                            1
+                        </td>
+                        <td class="py-4 px-6">
+                            toilet
+                        </td>
+                        <td class="py-4 px-6">
+                            15
+                        </td>
+                        <td class="py-4 px-6">
+                            D 80,000.00
+                        </td>
+                        <td class="py-4 px-6">
+                            D 1,200,000.00
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
+                <a href="https://www.gofundme.com/f/1qz7d0er5c?ssid=1377196478&pos=76">
+                    <button class="bg-blue-700 ml-24 my-6 px-6 rounded-lg text-gray-100 uppercase">Donate Now
+                    </button>
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!--    Agricultural project-->
+    <div class="container mx-auto rounded bg-gray-100 shadow-lg mb-6">
+        <aside class="mr-2 w-full bg-gray-100 shadow-xl rounded p-6">
+            <h2 class="text-3xl font-bold font-mono p-2">Agricultural Project</h2>
+            <p class="p-4 text-justify text-sm leading-loose">
+                To keep Seven Hundred and Eighty scholars at a me is not easy. The Old man practice subsistence farming
+                where He tills the Land with Hoes and Donkey s. We now want to embark on a model Farming where we have 7
+                kilometers of Land available to do mixed farming. We want to have livestock, Poultry, Plants and
+                Vegetables grown throughout the year. To embark on this project we need serious funding to fence the
+                land, Have two boreholes. We cannot do these projects alone but with the support of donor partners. Once
+                it starts it will be sustainable and will provide Employment for all the satellite Villages in the area,
+                Increase their food consumption and provide them with regular income. Below are the details of this
+                Agriculture Project.
+            </p>
+        </aside>
+
+        <aside class="bg-gray-100 shadow-xl ">
+            <img class="mb-6" src="{% static 'images/01.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/02.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/03.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/04.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/05.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/06.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/07.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/08.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/09.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/10.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/11.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/12.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/13.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/14.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/15.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/16.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/17.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/18.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/19.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/20.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/21.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/22.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/23.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/24.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/25.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/26.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/27.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/28.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/29.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/30.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/31.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/32.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/33.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/34.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/35.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/36.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/37.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/38.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/39.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/40.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/41.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/42.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/43.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/44.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/45.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/46.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/47.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/48.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/49.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/50.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/51.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/52.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/53.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/54.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/55.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/56.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/57.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/58.jpg'%}" alt="img_01">
+            <img class="mb-6" src="{% static 'images/59.jpg'%}" alt="img_01">
+
+            <hr>
+        </aside>
+        <a href="https://www.gofundme.com/f/1qz7d0er5c?ssid=1377196478&pos=76">
+            <button class="w-full bg-green-600 py-2 text-gray-100 text-xl uppercase">Donate Now</button>
+        </a>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container mx-auto max-w-1/2">
+
+    <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" data-tabs-toggle="#myTabContent" id="myTab"
+            role="tablist">
+            <!--            <li class="mr-2" role="presentation">-->
+            <!--                <button aria-controls="images"-->
+            <!--                        aria-selected="true"-->
+            <!--                        class="inline-block p-4 rounded-t-lg border-b-2 text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500"-->
+            <!--                        data-tabs-target="#images" id="images-tab" role="tab"-->
+            <!--                        type="button">Images-->
+            <!--                </button>-->
+            <!--            </li>-->
+            <li class="mr-2" role="presentation">
+                <button aria-controls="audios"
+                        aria-selected="false"
+                        class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"
+                        data-tabs-target="#audios" id="audios-tab"
+                        role="tab" type="button">Audios
+                </button>
+            </li>
+            <!--            <li class="mr-2" role="presentation">-->
+            <!--                <button aria-controls="videos"-->
+            <!--                        aria-selected="false"-->
+            <!--                        class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"-->
+            <!--                        data-tabs-target="#videos" id="videos-tab" role="tab"-->
+            <!--                        type="button">Videos-->
+            <!--                </button>-->
+            <!--            </li>-->
+        </ul>
+    </div>
+    <!--    <div id="myTabContent">-->
+    <!--        <div aria-labelledby="images-tab" class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="images"-->
+    <!--             role="tabpanel">-->
+    <!--            &lt;!&ndash;            table content&ndash;&gt;-->
+
+    <!--            <div class="overflow-x-auto relative">-->
+    <!--                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">-->
+    <!--                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">-->
+    <!--                    <tr>-->
+    <!--                        <th class="py-3 px-6" scope="col">-->
+    <!--                            Title-->
+    <!--                        </th>-->
+    <!--                        <th class="py-3 px-6" scope="col">-->
+    <!--                            File Name-->
+    <!--                        </th>-->
+    <!--                        <th class="py-3 px-6" scope="col">-->
+    <!--                            Image Viewer-->
+    <!--                        </th>-->
+    <!--                    </tr>-->
+    <!--                    </thead>-->
+    <!--                    <tbody>-->
+    <!--                    {% for image in images %}-->
+    <!--                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">-->
+    <!--                            <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">-->
+    <!--                                {{ image.title }}-->
+    <!--                            </th>-->
+    <!--                            <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">-->
+    <!--                                {{ image.upload.name }}-->
+    <!--                            </th>-->
+    <!--                            <td class="py-4 px-6">-->
+    <!--                                <img width="150" src="{{ image.upload.url }}" alt="{{ image.upload.name }}">-->
+    <!--                            </td>-->
+    <!--                        </tr>-->
+    <!--                    {% endfor %}-->
+    <!--                    </tbody>-->
+    <!--                </table>-->
+    <!--            </div>-->
+
+    <!--            &lt;!&ndash;        end table&ndash;&gt;-->
+    <!--        </div>-->
+    <div aria-labelledby="audios-tab" class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="audios"
+         role="tabpanel">
+        <!--            table container-->
+        <div class="overflow-x-auto relative">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th class="py-3 px-6" scope="col">
+                        Title
+                    </th>
+                    <!--                        <th class="py-3 px-6" scope="col">-->
+                    <!--                            File NAme-->
+                    <!--                        </th>-->
+                    <th class="py-3 px-6" scope="col">
+                        Audio Player
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for audio in audious %}
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">
+                        {{ audio.title }}
+                    </th>
+                    <!--                    <td class="py-4 px-6">-->
+                    <!--                        {{ audio.audio_src.path }}-->
+                    <!--                    </td>-->
+                    <td class="py-4 px-6">
+                        <audio controls src="{{ audio.audio_src.url }}">{{ audio.name }}</audio>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <!--            end table-->
+    </div>
+    <!--        <div aria-labelledby="videos-tab" class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="videos"-->
+    <!--             role="tabpanel">-->
+    <!--&lt;!&ndash;            table container&ndash;&gt;-->
+    <!--              <div class="overflow-x-auto relative">-->
+    <!--                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">-->
+    <!--                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">-->
+    <!--                    <tr>-->
+    <!--                        <th class="py-3 px-6" scope="col">-->
+    <!--                            Title-->
+    <!--                        </th>-->
+    <!--                        <th class="py-3 px-6" scope="col">-->
+    <!--                            File NAme-->
+    <!--                        </th>-->
+    <!--                        <th class="py-3 px-6" scope="col">-->
+    <!--                            Video Player-->
+    <!--                        </th>-->
+    <!--                    </tr>-->
+    <!--                    </thead>-->
+    <!--                    <tbody>-->
+    <!--                    {% for video in videos %}-->
+    <!--                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">-->
+    <!--                            <th class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" scope="row">-->
+    <!--                                {{ video.title }}-->
+    <!--                            </th>-->
+    <!--                            <td class="py-4 px-6">-->
+    <!--                                {{ video.video_src.name }}-->
+    <!--                            </td>-->
+    <!--                            <td class="py-4 px-6">-->
+    <!--                                <video controls width="350" src="{{ video.video_src.url }}" />-->
+    <!--                            </td>-->
+    <!--                        </tr>-->
+    <!--                    {% endfor %}-->
+    <!--                    </tbody>-->
+    <!--                </table>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <div aria-labelledby="contacts-tab" class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts"
+         role="tabpanel">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>.
+            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
+            classes to control the content visibility and styling.</p>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<style>
+    .custom-img {
+        background-image: url('{% static 'images/backgroud.jpg' %}')
+    }
+
+
+</style>
+
+<header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+    <div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl font-mono">
+        Sheikh Jassong Touray Foundation
+    </div>
+</header>
+
+<div class="max-auto p-4">
+    <div class="bg-gray-200 mx-auto w-ful md:w-1/2 rounded-xl shadow-xl">
+        <h1 class="uppercase text-center text-gray-900 pt-6 text-3xl font-bold font-mono">about-us</h1>
+        <div class="px-12 py-6">
+            <p class="leading-loose text-center font-mono text-lg">
+                The Sheikh Jassong Touray Foundation was based on the maining and promooting the
+                legacy of late Sheikh Pa Jassong Touray. In our efforts to promote and maintain the legacy of our Grand
+                Scholar and marabou the late Sheikh Pa Jassong Touray, We are embarking on a fund raising request from
+                Donor Agencies, International Partners, NGO's and Charitable Organisations, to maintain his work.
+                He led a Humble and Noble life. Most of His work was concentrated in the areas of Education, Health,
+                Religion, Infrastructural Development, and work for Humanity and Agriculture.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
